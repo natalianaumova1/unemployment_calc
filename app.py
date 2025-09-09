@@ -248,6 +248,7 @@ if submitted:
 
     if missing:
         st.error(f"Please fill in all required fields: {', '.join(missing)}")
+        st.stop() 
     else:
         user_inputs = {
             "gndr": map_gender(gndr),
